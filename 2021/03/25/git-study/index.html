@@ -23,20 +23,21 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"donggunyoon.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="GitGit의 특징 빠른 속도와 단순한 구조 분산적인 저장소 지원으로 로컬 환경에서도 사용가능 비선형적 개발 가능  Git Clone을 통한 프로젝트 진행하기 Github에 접속하여 Repository 생성 생성된 Repository에 url복사 Terminal혹은 bash에 들어가 원하는 경로 찾기 생성 희망 경로에 git clone url주소 입력 생성">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://donggunyoon.github.io/2021/03/25/hello-world/index.html">
+<meta property="og:title" content="Git 강의">
+<meta property="og:url" content="https://donggunyoon.github.io/2021/03/25/git-study/index.html">
 <meta property="og:site_name" content="DongGunYoon&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="GitGit의 특징 빠른 속도와 단순한 구조 분산적인 저장소 지원으로 로컬 환경에서도 사용가능 비선형적 개발 가능  Git Clone을 통한 프로젝트 진행하기 Github에 접속하여 Repository 생성 생성된 Repository에 url복사 Terminal혹은 bash에 들어가 원하는 경로 찾기 생성 희망 경로에 git clone url주소 입력 생성">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-03-25T07:26:04.866Z">
-<meta property="article:modified_time" content="2021-03-25T07:26:04.866Z">
+<meta property="article:published_time" content="2021-03-25T11:20:02.000Z">
+<meta property="article:modified_time" content="2021-03-25T11:27:13.303Z">
 <meta property="article:author" content="DongGun Yoon">
+<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://donggunyoon.github.io/2021/03/25/hello-world/">
+<link rel="canonical" href="https://donggunyoon.github.io/2021/03/25/git-study/">
 
 
 <script class="page-configurations">
@@ -48,7 +49,7 @@
     lang   : 'en'
   };
 </script>
-<title>Hello World | DongGunYoon's Blog</title>
+<title>Git 강의 | DongGunYoon's Blog</title>
   
 
 
@@ -147,7 +148,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git"><span class="nav-number">1.</span> <span class="nav-text">Git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Git%EC%9D%98-%ED%8A%B9%EC%A7%95"><span class="nav-number">1.0.1.</span> <span class="nav-text">Git의 특징</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git-Clone%EC%9D%84-%ED%86%B5%ED%95%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A7%84%ED%96%89%ED%95%98%EA%B8%B0"><span class="nav-number">1.0.2.</span> <span class="nav-text">Git Clone을 통한 프로젝트 진행하기</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git%EC%97%90-%EC%A0%84%EB%B0%98%EC%A0%81%EC%9D%B8-%EA%B3%BC%EC%A0%95"><span class="nav-number">1.0.3.</span> <span class="nav-text">Git에 전반적인 과정</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -204,7 +205,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://donggunyoon.github.io/2021/03/25/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://donggunyoon.github.io/2021/03/25/git-study/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -217,7 +218,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          Git 강의
         </h1>
 
         <div class="post-meta-container">
@@ -227,8 +228,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2021-03-25 16:26:04" itemprop="dateCreated datePublished" datetime="2021-03-25T16:26:04+09:00">2021-03-25</time>
+      <time title="Created: 2021-03-25 20:20:02 / Modified: 20:27:13" itemprop="dateCreated datePublished" datetime="2021-03-25T20:20:02+09:00">2021-03-25</time>
     </span>
 
   
@@ -241,19 +243,25 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><h3 id="Git의-특징"><a href="#Git의-특징" class="headerlink" title="Git의 특징"></a>Git의 특징</h3><ul>
+<li>빠른 속도와 단순한 구조</li>
+<li>분산적인 저장소 지원으로 로컬 환경에서도 사용가능</li>
+<li>비선형적 개발 가능</li>
+</ul>
+<h3 id="Git-Clone을-통한-프로젝트-진행하기"><a href="#Git-Clone을-통한-프로젝트-진행하기" class="headerlink" title="Git Clone을 통한 프로젝트 진행하기"></a>Git Clone을 통한 프로젝트 진행하기</h3><ol>
+<li>Github에 접속하여 Repository 생성</li>
+<li>생성된 Repository에 url복사</li>
+<li>Terminal혹은 bash에 들어가 원하는 경로 찾기</li>
+<li>생성 희망 경로에 git clone url주소 입력</li>
+<li>생성된 clone에서 사용하기!</li>
+</ol>
+<h3 id="Git에-전반적인-과정"><a href="#Git에-전반적인-과정" class="headerlink" title="Git에 전반적인 과정"></a>Git에 전반적인 과정</h3><ol>
+<li>README.md 파일 생성을 통한 프로젝트 설명</li>
+<li>프로젝트에서 담당한 부분 진행</li>
+<li>주기적으로 진행한 부분에 대한 commit수행</li>
+<li>commit하는 내용에 대한 log작성</li>
+<li>전체적인 진행을 마무리할때 git push해주기</li>
+</ol>
 
     </div>
 
@@ -262,16 +270,19 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/git/" rel="tag"># git</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/2021/03/25/My-very-new-github-blog/" rel="prev" title="My very new github blog">
+                  <i class="fa fa-chevron-left"></i> My very new github blog
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/03/25/My-very-new-github-blog/" rel="next" title="My very new github blog">
-                  My very new github blog <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
